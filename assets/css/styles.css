@@ -156,7 +156,6 @@ a {
 .hero .hero-body {
     display: flex;
     justify-content: space-between;
-    padding: 45px 0 79px;
 }
 
 /* hero-text */
@@ -223,6 +222,7 @@ a {
     object-fit: cover;
 }
 
+/* courses */
 .hero-media .courses {
     display: flex;
     position: absolute;
@@ -265,6 +265,7 @@ a {
     margin: 22px 25px 23px 16px;
 }
 
+/* schedules */
 .hero-media .schedules {
     position: absolute;
     top: 453px;
@@ -296,6 +297,7 @@ a {
     margin-right: auto;
 }
 
+/* students */
 .hero-media .students {
     position: absolute;
     top: 500px;
@@ -341,4 +343,93 @@ a {
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* Features */
+.features {
+    padding: 130px 0;
+}
+
+.features .body {
+    max-width: 1024px;
+    width: 100%;
+}
+
+/* features-top */
+.features .heading {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.features-top .title {
+    margin-top: 18px;
+    max-width: 577px;
+    width: 100%;
+}
+
+.features-top .desc {
+    margin-top: 18px;
+    max-width: 590px;
+    width: 100%;
+    color: #767e7e;
+    font-size: 18px;
+    line-height: normal;
+}
+
+/* features-bottom */
+.features-bottom {
+    margin-top: 80px;
+    display: flex;
+}
+
+.features-bottom .bgc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    width: 102px;
+    height: 106px;
+    background: #ffc147;
+}
+
+.features-bottom .bgc-2 {
+    background: #ff947a;
+}
+
+.features-bottom .bgc-3 {
+    background: #bf83ff;
+}
+
+.features-bottom .title {
+    margin-top: 26px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.features-bottom .desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-weight: 400;
+    line-height: 1.69;
+    max-width: 168px;
+    width: 100%;
+}
+
+.features-bottom .column-2 .desc {
+    max-width: 223px;
+}
+
+.features-bottom .column-2 {
+    margin-left: 209px;
+}
+
+.features-bottom .column-3 .desc {
+    max-width: 224px;
+}
+
+.features-bottom .column-3 {
+    margin-left: 200px;
 }
