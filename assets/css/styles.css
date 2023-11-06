@@ -350,7 +350,7 @@ a {
 
 /* Features */
 .features {
-    padding: 130px 0;
+    padding-top: 130px;
 }
 
 .features .body {
@@ -440,6 +440,10 @@ a {
 }
 
 /* Courses */
+.courses {
+    padding-top: 130px;
+}
+
 /* courses-top */
 .courses-top .title.lv2 {
     margin-top: 18px;
@@ -558,7 +562,7 @@ a {
 
 /* Countdown */
 .countdown {
-    margin: 389px 0 264px;
+    margin-top: 389px;
 }
 
 .countdown .base {
@@ -587,6 +591,10 @@ a {
 }
 
 /* Feedback */
+.feedback {
+    padding-top: 264px;
+}
+
 .feedback-item {
     display: flex;
 }
