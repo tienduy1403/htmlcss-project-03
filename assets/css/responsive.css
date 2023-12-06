@@ -1,0 +1,346 @@
+/* PC-lg-xl-xxl */
+@media screen and (min-width: 992px) {
+    .header-mobile {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* PC-lg-xl */
+@media screen and (min-width: 992px) and (max-width: 1140px) {
+    .hero .title {
+        scale: 0.9;
+    }
+
+    .lv1 {
+        font-size: 5.5rem;
+    }
+
+    .footer-top {
+        gap: 10%;
+    }
+}
+
+/* Tablet & Mobile-md-sm */
+@media screen and (max-width: 991px) {
+    .header {
+        top: -20px;
+        padding: 30px 0 10px 0;
+    }
+
+    .navbar .navigation {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .logo-mobile {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    .toggle-menu {
+        --primary-color: #1ebfc1;
+
+        width: 24px;
+        color: var(--primary-color);
+    }
+
+    .header-mobile [type="checkbox"]:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header-mobile [type="checkbox"]:checked ~ .drawer-menu {
+        translate: 0 0;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s, visibility 0.5s;
+    }
+
+    .drawer-menu {
+        padding: 30px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 100;
+        translate: -100% 0;
+        transition: translate 0.5s;
+    }
+
+    .drawer-menu .logo-link {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .drawer-menu .action-link {
+        display: block;
+        padding: 15px 0;
+        color: #2f3a3b;
+    }
+
+    .drawer-menu .seperate {
+        margin: 15px 0;
+        width: 100%;
+        height: 1px;
+        border-radius: 99px;
+        background: #ccc;
+    }
+
+    .hero .hero-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        padding: 50px 0;
+    }
+
+    .hero .lv1 {
+        font-size: 5rem;
+        max-width: 100%;
+    }
+
+    .hero-media .img {
+        width: 100%;
+        height: 580px;
+    }
+    .hero-media .students,
+    .hero-media .schedules {
+        top: 65%;
+    }
+
+    .hero-media .courses-card {
+        top: 20%;
+    }
+
+    .courses-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .courses-bottom .card {
+        width: 100%;
+    }
+
+    .courses-bottom .info {
+        position: static;
+    }
+
+    .courses-bottom .link-cta {
+        flex-shrink: 0;
+    }
+
+    .courses-bottom .info .content {
+        margin: 40px;
+    }
+
+    .countdown {
+        margin-top: 100px;
+    }
+
+    .countdown .countdown-body {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .feedback {
+        padding-top: 100px;
+    }
+
+    .feedback-item .content {
+        width: 100%;
+    }
+
+    .feedback-item .students {
+        display: none;
+    }
+
+    .feedback-item .quote {
+        width: auto;
+    }
+
+    .feedback-item .button-click {
+        justify-content: center;
+    }
+
+    .cta .cta-body {
+        justify-content: space-between;
+    }
+
+    .cta-body .button {
+        margin-left: 0;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-areas:
+            "aa aa aa aa"
+            "b2 b3 b4 b5";
+        gap: 50px;
+    }
+
+    .footer-top .column:first-child {
+        grid-area: aa;
+    }
+
+    .footer-top .column-2 {
+        grid-area: b2;
+    }
+
+    .footer-top .column-3 {
+        grid-area: b3;
+    }
+
+    .footer-top .column-4 {
+        grid-area: b4;
+    }
+
+    .footer-top .column-5 {
+        grid-area: b5;
+    }
+}
+
+/* Tablet -md */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .drawer-menu .show-on-mobile {
+        display: none;
+    }
+}
+
+/* Mobile-sm */
+@media screen and (max-width: 767px) {
+    .navbar .user {
+        display: none;
+    }
+
+    .drawer-menu {
+        inset: 0 25% 0 0;
+    }
+
+    .hero {
+        padding-bottom: 0;
+    }
+
+    .hero .lv1 {
+        --line-clamp: 3;
+
+        font-size: 4rem;
+    }
+
+    .hero-media > .img {
+        display: none;
+    }
+
+    .hero-media {
+        position: relative;
+        width: 100%;
+    }
+
+    .hero-media .students,
+    .hero-media .schedules,
+    .hero-media .courses-card {
+        position: relative;
+        box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-media .courses-card {
+        left: 0px;
+    }
+
+    .hero-media .schedules {
+        margin-top: 10px;
+        padding-top: 5px;
+        left: 00px;
+    }
+
+    .hero-media .students {
+        top: -108px;
+        left: 150px;
+    }
+
+    .features {
+        padding-top: 50px;
+    }
+
+    .lv2 {
+        --line-clamp: 3;
+
+        font-size: 3.5rem;
+    }
+
+    .features-top .desc {
+        --line-clamp: 3;
+    }
+
+    .features-bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+
+    .features-bottom .column {
+        margin-left: 0;
+    }
+
+    .features-bottom .column .desc {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .courses-top .link-cta {
+        display: none;
+    }
+
+    .courses-bottom .card {
+        display: block;
+    }
+
+    .courses-bottom .info {
+        width: 100%;
+    }
+
+    .courses-bottom .card .img {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .courses-bottom .info .content {
+        margin: 0;
+        padding: 40px;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta .cta-body {
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .footer-top {
+        grid-template-areas:
+            "aa aa "
+            "b2 b3 "
+            "b4 b5";
+    }
+}
